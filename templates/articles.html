@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h2>Articles</h2>
+<hr>
+
+{% if articles %}
+{% for article in articles %}
+
+<div class="row">
+    <div class="col-lg-8">
+        <!-- Post content-->
+        <article>
+            <!-- Post header-->
+            <header class="mb-4">
+                <!-- Post title-->
+                <h4 class="fw-bolder mb-1">{{article.title}}</h4>
+                <!-- Post meta content-->
+                <div class="text-muted fst-italic mb-2">by {{article.author.username}}</div>
+                <hr>
+                <div class="text-muted fst-italic mb-2">@ {{article.created_date}}</div>
+                <hr>
+                <!-- Post categories-->
+                <!--<a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>-->
+                <!---<a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>--->
+            </header>
+            <!-- Preview image figure-->
+            {% if article.article_image %}
+            <figure class="mb-4"><img class="img-fluid rounded" src="{{article.article_image.url}}" alt="..." /></figure>
+            {% else %}
+            {% endif %}
+
+            <!-- Post content-->
+            <section class="mb-5">
+                <p class="lead">
+                    <!-- {{article.content}} -->
+                    {{article.content|safe}}
+
+                </p>
+            </section>
+        </article>
+        <!-- Comments section-->
+
+    </div>
+    <!-- Side widgets-->
+    <div class="col-lg-4">
+        <!-- Search widget-->
+
+        <!-- Categories widget-->
+
+        <!-- Side widget-->
+
+    </div>
+</div>
+{% endfor %}
+
+{% else %}
+<div class="alert alert-danger">There is no article in this blog</div>
+{% endif %}
+{% endblock body %}
