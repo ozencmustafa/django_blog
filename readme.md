@@ -38,6 +38,11 @@ We get below warning while running the webserver.
 You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
 Run 'python manage.py migrate' to apply them.
 ```
+Run below command to create the sqlite.db.
+```
+python manage.py makemigrations
+```
+
 When we run the command, there will be many tables crated in the db.
 ```buildoutcfg
 python manage.py migrate
@@ -516,7 +521,10 @@ How can we save the file or upload to /media/ ?
 - articles = Article.objects.all() can retrieve all articles and stores in a list.
 - we create articles.html
 
+# How to deploy on Pythonanywhere
+https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
 
+mkvirtualenv --python=/usr/bin/python3.8 mysite-virtualenv
 
 
 
