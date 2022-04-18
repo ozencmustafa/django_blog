@@ -1,12 +1,14 @@
 # if you decide to run this on cloud check the settings.py file for the secret.key . 
 
-# MVC Model	(Model-View-Controller)					
-								 __ Model
-								|
-								|
-User - Django - URL - View ---- |
-								|
-								|__ Template
+# MVC Model	(Model-View-Controller)
+```text
+								                        __ Model
+								                       |
+							                        |
+User---Django---URL---View ----|								
+								                       |  
+								                       |__ Template
+
 
 # Introduction to Django Web framework
 Ready admin panel. Quick development.\
