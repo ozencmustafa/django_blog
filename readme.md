@@ -2,12 +2,14 @@
 
 # MVC Model	(Model-View-Controller)
 ```text
-								                        __ Model
-								                       |
-							                        |
-User---Django---URL---View ----|								
-								                       |  
-								                       |__ Template
+								 __ Model
+								|
+							    |
+User---Django---URL---View ---- |								
+								|  
+								|__ Template
+
+```
 
 
 # Introduction to Django Web framework
