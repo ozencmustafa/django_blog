@@ -1,4 +1,13 @@
 # if you decide to run this on cloud check the settings.py file for the secret.key . 
+
+# MVC Model	(Model-View-Controller)					
+								 __ Model
+								|
+								|
+User - Django - URL - View ---- |
+								|
+								|__ Template
+
 # Introduction to Django Web framework
 Ready admin panel. Quick development.\
 Ready User model which is called auth_user. It is a table in the SQLite DB.\
