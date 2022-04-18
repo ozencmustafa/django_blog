@@ -1,11 +1,13 @@
-# if you decide to run this on cloud check the settings.py file for the secret.key . 
+# if you decide to run this on cloud check the settings.py file for the secret.key
+
 
 # MVC Model	(Model-View-Controller)
+
 ```text
 								 __ Model
 								|
 							    |
-User---Django---URL---View ---- |								
+User---Django---URL---View ---- |
 								|  
 								|__ Template
 
